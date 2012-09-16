@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!DOCTYPE screens>
+<screens>
+  <assets>
+    <images>
+      <image name="assets/images/menu_chips.png" CreateMaskFromColor="false"
+               R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+      <image name="assets/images" CreateMaskFromColor="false"
+               R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    </images>
+    <sprites>
+      <sprite name="Btn_on" FlipX="false" FlipY="false"
+                SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+                SetColor="tag" Color="Blue" R="0" G="0" B="255" A="0" SetImage="menu_chips" SetRotation="0.0"
+                SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+                SetSubRectT="0" SetSubRectR="326" SetSubRectB="36"
+                SetX="237" SetY="10"/>
+      <sprite name="Btn_off" FlipX="false" FlipY="false"
+                SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+                SetColor="value" Color="Red" R="255" G="0" B="0" A="0" SetImage="Antidote" SetRotation="0.0"
+                SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+                SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+                SetX="40" SetY="10"/>
+    </sprites>
+    <sounds>
+      <sound name="assets/sounds/drip.wav" />
+      <sound name="assets/sounds/success.wav" />
+    </sounds>
+    <music>
+      <song name="assets/sounds/drip.wav" />
+      <song name="assets/sounds/success.wav" />
+    </music>
+    <fonts>
+      <font name="assets/fonts/arial.ttf" />
+    </fonts>
+    <xmlFiles>
+      <xml name="assets/xml/configure.xml" />
+    </xmlFiles>
+  </assets>
+  
+  <screen>
+    <name value="start_screen" />
+    <title value="Start Game"/>
+    <backgroundColor R="0" G="0" B="0"/>
+    <backgroundImage name="start_screen_bg" />
+    <options>
+      <option type="Start_Btn" title="Start Game" font="arial" x="350" y="450">
+        <!-- These sprites might be just optional if it isn't too hard to code for using
+             TinyXML2's api to check if these exist or not. 
+         -->
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <!-- This next option would be an example of omitting the sprites which would then
+           just use the default Btn_on Btn_off sprites.
+       -->
+      <option type="Transition_Btn" title="Load Game" font="arial" value="load_game_screen" x="350" y="450" />
+      <!-- This next option goes back to defining which sprites to use for a Btn to be
+           Highlighted or selected over.
+       -->
+      <option type="Transition_Btn" title="Options" font="arial" value="options_screen" x="350" y="450">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Quit_Btn" title="Quit" font="arial" x="350" y="450">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+    </options>
+  </screen>
+
+  <screen>
+    <name value="load_game_screen" />
+    <title value="Options"/>
+    <backgroundColor R="0" G="0" B="0"/>
+    <backgroundImage name="load_game_screen_bg" />
+    <options>
+      <option type="Load_Game_Btn" title="Save 1" font="arial" x="350" y="450">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Load_Game_Btn" title="Save 2" font="arial" x="350" y="450">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Load_Game_Btn" title="Save 3" font="arial" x="350" y="450">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Transition_Btn" title="Back" font="arial" value="start_screen" x="350" y="450">
+        <sprite name="Btn_on" />
+        <sprite name="Btn_off" />
+      </option>
+    </options>
+  </screen>
+  
+  <screen>
+    <name value="options_screen" />
+    <title value="Options"/>
+    <backgroundColor R="0" G="0" B="0"/>
+    <backgroundImage name="options_screen_bg" />
+    <options>
+      <option type="Transition_Btn" title="Audio" font="arial" value="audio_screen" x="350" y="450">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Transition_Btn" title="Display" font="arial" value="display_screen" x="350" y="450">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Transition_Btn" title="Keyboard" font="arial" value="keyboard_screen" x="350" y="450">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Transition_Btn" title="Back" font="arial" value="start_screen" x="350" y="450">
+        <sprite name="Btn_on" />
+        <sprite name="Btn_off" />
+      </option>
+    </options>
+  </screen>
+
+  <screen>
+    <name value="keyboard_screen" />
+    <title value="Keyboard Options" />
+    <backgroundColor R="0" G="0" B="128" />
+    <backgroundImage name="option_screen_bg" />
+    <options>
+      <option type="Control_Config_Btn" title="Space" title_font="arial" label="Jump" label_font="arial" value="" x="350" y="400">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Control_Config_Btn" title="Mouse1" title_font="arial" label="Attack" label_font="arial" x="350" y="300">
+        <sprite name="Btn_on"/>
+        <sprite name="Btn_off"/>
+      </option>
+      <option type="Transition_Btn" title="Back" font="arial" value="options_screen" x="350" y="450">
+        <sprite name="Btn_on" />
+        <sprite name="Btn_off" />
+      </option>
+      <option type="Save_Btn" title="Save" font="arial" value="options_screen" x="350" y="450">
+        <sprite name="Btn_on" />
+        <sprite name="Btn_off" />
+      </option>
+    </options>
+  </screen>
+</screens>

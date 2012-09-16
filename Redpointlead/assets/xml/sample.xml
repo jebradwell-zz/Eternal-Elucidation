@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE screens>
+<screens>
+  <assets>
+    <images>
+      load_game_screen_bg
+      <image name="assets/images/menu_chips.png" CreateMaskFromColor="false"
+               R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+      <image name="assets/images/load_game_screen_bg.png" CreateMaskFromColor="false"
+               R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+      <image name="assets/images/start_screen_bg.png" CreateMaskFromColor="false"
+               R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    </images>
+    <sprites>
+      <sprite name="Btn_on" FlipX="false" FlipY="false"
+                SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+                SetColor="tag" Color="Blue" R="0" G="0" B="255" A="0" SetImage="menu_chips" SetRotation="0.0"
+                SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+                SetSubRectT="0" SetSubRectR="326" SetSubRectB="36"
+                SetX="237" SetY="10"/>
+      <sprite name="Btn_off" FlipX="false" FlipY="false"
+                SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+                SetColor="value" Color="NULL" R="255" G="0" B="0" A="0" SetImage="menu_chips" SetRotation="0.0"
+                SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+                SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+                SetX="40" SetY="10"/>
+      <sprite name="start_screen_bg" FlipX="false" FlipY="false"
+                SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+                SetColor="vslur" Color="Blue" R="0" G="0" B="0" A="0" SetImage="start_screen_bg" SetRotation="0.0"
+                SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+                SetSubRectT="0" SetSubRectR="800" SetSubRectB="600"
+                SetX="0" SetY="0"/>
+      <sprite name="load_game_screen_bg" FlipX="false" FlipY="false"
+                SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+                SetColor="vslur" Color="Blue" R="0" G="0" B="0" A="0" SetImage="load_game_screen_bg" SetRotation="0.0"
+                SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+                SetSubRectT="0" SetSubRectR="800" SetSubRectB="600"
+                SetX="0" SetY="0"/>
+    </sprites>
+    <sounds>
+      <sound name="drip" filepath="assets/sounds/drip.wav" />
+      <sound name="success" filepath="assets/sounds/success.wav" />
+    </sounds>
+    <music>
+      <song name="drip" filepath="assets/sounds/drip.wav" />
+      <song name="success" filepath="assets/sounds/success.wav" />
+    </music>
+    <fonts>
+      <font name="arial" filepath="assets/fonts/arial.ttf" />
+    </fonts>
+    <xmlFiles>
+      <xmlFile name="configure" filepath="assets/xml/configure.xml" />
+    </xmlFiles>
+  </assets>
+  
+  <screen name="start_screen" backgroundColor="FFFFFF" backgroundImage="start_screen_bg">
+    <title value="Start Game" x="20" y="0"/>
+    <options>
+      <option type="Start_Btn" title="Start Game" title_font="arial" value="start_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Transition_Btn" title="Load Game" title_font="arial" value="load_game_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Transition_Btn" title="Options" title_font="arial" value="options_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Quit_Btn" title="Quit" title_font="arial" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+    </options>
+  </screen>
+
+  <screen name="load_game_screen" backgroundColor="FFFFF" backgroundImage="load_game_screen_bg">
+    <title value="Load Game" x="10" y="0"/>
+    <options>
+      <option type="Load_Game_Btn" title="Save 1" title_font="arial" value="start_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Load_Game_Btn" title="Save 2" title_font="arial" value="start_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Load_Game_Btn" title="Save 3" title_font="arial" value="start_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Transition_Btn" title="Back" title_font="arial" value="start_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+    </options>
+  </screen>
+  
+  <screen name="options_screen" backgroundColor="FFFFFF" backgroundImage="options_screen_bg">
+    <title value="Options" x="0" y="0"/>
+    <options>
+      <option type="Transition_Btn" title="Audio" title_font="arial" value="audio_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Transition_Btn" title="Display" title_font="arial" value="display_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Transition_Btn" title="Keyboard" title_font="arial" value="keyboard_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Transition_Btn" title="Back" title_font="arial" value="start_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+    </options>
+  </screen>
+
+  <screen name="keyboard_screen" title="Keyboard Options" backgroundColor="FFFF88" backgroundImage="keyboard_screen_bg">
+    <title value="Keyboard Options" x="60" y="10"/>
+    <options>
+      <!--<table x="0" y="0" w="100" h="400" >-->
+      <option type="Control_Config_Btn" title="Space" title_font="arial" label="Jump" label_font="arial" x="350" y="400" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Control_Config_Btn" title="Mouse1" title_font="arial" label="Attack" label_font="arial" x="350" y="300" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Transition_Btn" title="Back" title_font="arial" value="options_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <option type="Save_Btn" title="Save" title_font="arial" value="keyboard_screen" x="350" y="450" onImg="Btn_on" offImg="Btn_off" />
+      <!--</table>-->
+    </options>
+  </screen>
+</screens>

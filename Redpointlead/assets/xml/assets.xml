@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE screens>
+<screens>
+  <assets>
+    <images>
+      <image name="assets/images/menu_chips.png" CreateMaskFromColor="false"
+               R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+      <image name="assets/images/start_screen_bg.png" CreateMaskFromColor="false"
+               R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    </images>
+    <sprites>
+      <sprite name="Btn_on" FlipX="false" FlipY="false"
+                SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+                SetColor="tag" Color="Blue" R="0" G="0" B="255" A="0" SetImage="menu_chips" SetRotation="0.0"
+                SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+                SetSubRectT="0" SetSubRectR="326" SetSubRectB="36"
+                SetX="237" SetY="10"/>
+      <sprite name="Btn_off" FlipX="false" FlipY="false"
+                SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+                SetColor="value" Color="NULL" R="255" G="0" B="0" A="0" SetImage="menu_chips" SetRotation="0.0"
+                SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+                SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+                SetX="40" SetY="10"/>
+    </sprites>
+    <sounds>
+      <sound name="drip" filepath="assets/sounds/drip.wav" />
+      <sound name="success" filepath="assets/sounds/success.wav" />
+    </sounds>
+    <music>
+      <song name="drip" filepath="assets/sounds/drip.wav" />
+      <song name="success" filepath="assets/sounds/success.wav" />
+    </music>
+    <fonts>
+      <font name="arial" filepath="assets/fonts/arial.ttf" />
+    </fonts>
+    <xmlFiles>
+      <xmlFile name="configure" filepath="assets/xml/configure.xml" />
+    </xmlFiles>
+  </assets>
+</screens>
