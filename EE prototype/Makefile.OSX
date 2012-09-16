@@ -1,0 +1,12 @@
+CPP=g++
+CPPFLAGS=-arch i386 -I/opt/local/boost -Wall
+LDFLAGS=-arch i386 -L/opt/local/boost/stage/lib/ -lboost_filesystem -lboost_system
+FRAMEWORKS=-framework sfml-system -framework sfml-audio -framework sfml-window -framework sfml-graphics
+OBJS=cpImageButton.o cpShapeButton.o cpSelection-DropDownBox.o cpCheckBox.o cpTextBox.o cpTextInputBox.o Collision.o GameBullet.o GameInit.o GameShutdown.o GatherInput.o LevelGameLoop.o LevelInit.o LevelShutdown.o MainGameLoop.o MiscTasks.o Resource.o ResourceMaker.o ResourceManager.o RunAI.o RunPhysicsSimulations.o SendNetworkMessages.o Testing.o UpdateGameEntities.o UpdateGameState.o UpdateTimeStep.o cpGUI_base.o main.o map.o mapeditor.o oggResource.o pngResource.o tile.o tinystr.o tinyxml.o tinyxmlerror.o tinyxmlparser.o wavResource.o
+
+EE: $(OBJS)
+	$(CPP) $(LDFLAGS) -o EE $(OBJS) $(FRAMEWORKS)
+clean:
+	rm -f *.o
+	rm -f ./EE
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<mapName>this is a test</mapName>
+<width>123</width>
+<height>34033</height>
+<levelTotal>243224</levelTotal>
+<tile chipSetName="1.png" tileID="1" srcX="2.7735" srcY="4" width="30" height="23" rotation="90" level="0" terrainType="1" />
+<tile chipSetName="4.png" tileID="2" srcX="5" srcY="53" width="38" height="9" rotation="0" level="3" terrainType="5" />
+<tile chipSetName="2.png" tileID="3" srcX="2.3354" srcY="4" width="30" height="23" rotation="90" level="0" terrainType="1" />
+<tile chipSetName="3.png" tileID="4" srcX="2" srcY="4" width="30" height="23" rotation="90" level="0" terrainType="1" />
+<tile chipSetName="4.png" tileID="5" srcX="2" srcY="4" width="30" height="23" rotation="90" level="0" terrainType="1" />
+<tileDes tileID="1" desX="2.7" desY="2.7" />
+<tileDes tileID="2" desX="3.9" desY="32.3" />
+<tileDes tileID="3" desX="1.01" desY="2" />
+<tileDes tileID="4" desX="76" desY="66" />
+<tileDes tileID="5" desX="761" desY="47" />
+<tileDes tileID="1" desX="923" desY="33" />
+<tileDes tileID="2" desX="93" desY="3233" />
+<tileDes tileID="3" desX="1" desY="2" />
+<tileDes tileID="4" desX="76" desY="66" />
+<tileDes tileID="5" desX="761" desY="47" />
+<tileDes tileID="1" desX="923" desY="33" />
+<tileDes tileID="2" desX="93" desY="3233" />
+<tileDes tileID="3" desX="1" desY="2" />
+<tileDes tileID="4" desX="76" desY="66" />
+<tileDes tileID="5" desX="761" desY="47" />

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33C21396-0507-4A45-9C15-609BF503104A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>engineTesting</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Documents and Settings\Jeb\Desktop\SFML-1.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-audio-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Documents and Settings\Jeb\Desktop\SFML-1.5\lib\vc2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Documents and Settings\Jeb\Desktop\SFML-1.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Documents and Settings\Jeb\Desktop\SFML-1.5\lib\vc2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-audio-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\EE prototype\engineTesting\engineTesting\goblin.cpp" />
+    <ClCompile Include="CharacterSheet.cpp" />
+    <ClCompile Include="Demon.cpp" />
+    <ClCompile Include="ElucidatePalette.cpp" />
+    <ClCompile Include="EquipmentClass.cpp" />
+    <ClCompile Include="GameClass.cpp" />
+    <ClCompile Include="GameScreen.cpp" />
+    <ClCompile Include="InputModule.cpp" />
+    <ClCompile Include="InventoryClass.cpp" />
+    <ClCompile Include="InventorySheet.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="LoadGameScreen.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\..\EE prototype\engineTesting\engineTesting\tinystr.cpp" />
+    <ClCompile Include="..\..\..\EE prototype\engineTesting\engineTesting\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\EE prototype\engineTesting\engineTesting\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\EE prototype\engineTesting\engineTesting\tinyxmlparser.cpp" />
+    <ClCompile Include="GameObjectClass.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="MainMenuScreen.cpp" />
+    <ClCompile Include="OptionsScreen.cpp" />
+    <ClCompile Include="OrbClass.cpp" />
+    <ClCompile Include="PlayerClass.cpp" />
+    <ClCompile Include="Poison.cpp" />
+    <ClCompile Include="Tree.cpp" />
+    <ClCompile Include="Yang.cpp" />
+    <ClCompile Include="Yin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\EE prototype\engineTesting\engineTesting\goblin.h" />
+    <ClInclude Include="..\..\..\EE prototype\engineTesting\engineTesting\tinystr.h" />
+    <ClInclude Include="..\..\..\EE prototype\engineTesting\engineTesting\tinyxml.h" />
+    <ClInclude Include="CharacterSheet.h" />
+    <ClInclude Include="Demon.h" />
+    <ClInclude Include="ElucidatePalette.h" />
+    <ClInclude Include="EquipmentClass.h" />
+    <ClInclude Include="GameClass.h" />
+    <ClInclude Include="GameObjectClass.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="GameObjects.h" />
+    <ClInclude Include="GameScreen.h" />
+    <ClInclude Include="GenericSpawner.h" />
+    <ClInclude Include="InputModule.h" />
+    <ClInclude Include="InventoryClass.h" />
+    <ClInclude Include="InventorySheet.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="LoadGameScreen.h" />
+    <ClInclude Include="loadImages.h" />
+    <ClInclude Include="loadSprites.h" />
+    <ClInclude Include="MainMenuScreen.h" />
+    <ClInclude Include="OptionsScreen.h" />
+    <ClInclude Include="OrbClass.h" />
+    <ClInclude Include="PlayerClass.h" />
+    <ClInclude Include="Poison.h" />
+    <ClInclude Include="random.h" />
+    <ClInclude Include="ScreenClass.h" />
+    <ClInclude Include="screens.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Tree.h" />
+    <ClInclude Include="Yang.h" />
+    <ClInclude Include="Yin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\EE prototype\engineTesting\engineTesting\Level.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

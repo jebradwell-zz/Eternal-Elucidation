@@ -1,0 +1,1 @@
+9-15-2012 : Inital Eternal Elucidation code porting to git.

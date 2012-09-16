@@ -1,0 +1,146 @@
+-***DONE***create a generic radius function for the player's elucidate function... so that he elucidates with a given radius instead of checking each square that you want to set.
+
+-***DONE***Maybe have an init function for the spawner class which takes the RenderWindow reference for the parameter so that it's update call can just be .update() with no parameters.
+
+-***DONE***make the radius work correctly with using pythagorian functions to check if it is in the correct circle radius.
+
+-***DONE***create base class for the game objects or monster in the game which can be spawned... this class should have these functions:
+update()
+draw()
+
+***DONE***finish the sprite loader function by adding in the color switch and enum comparision.
+
+***DONE***create a backgound image of the void images to draw for the background instead of all the void individuals.
+
+***DONE***create a loading screen harness in for the loader functions.
+
+***DONE***create and initialize the spawner vectors in the gamestate class.
+
+***DONE***Create spawnerManager class
+============================================================
+in fact the spawner class may not even need to hold a vector of spawns at all... but instead manage a spawener list in the gamestate class. game state class: map<int spawnerID, vector<spawners<T>> spawnerManager push to indivdiual spawners
+where spawnerID is a unique ID per spawner, this way there can be multiple Goblin or fish or tree spawners set at different time itervals and spawns per count.
+to create a new spawner you might have a function as such:
+int spawnerManager.NewSpawner("Goblin", x, y, radius, tick, timeinterval)
+which creates a goblin spawner with passed parameters and returns the unique ID of the spawner for a handle later on.
+
+in order to change any of the spawners later on you can then call a function as such:
+spawnerManager.editSpawner(int spawnerID).setPosition(int x, int y);
+spawnerManager.editSpawner(int spawnerID).setradius(float radius);
+spawnerManager.editSpawner(int spawnerID).settick(int tick);
+spawnerManager.editSpawner(int spawnerID).setTimeInterval(int time);
+
+The spawner manager can have an init call which loads all the spawner types at the begining of the game. And as the game progresses new spanwers with new parameters for timeinterval and ticks per spawn are set.
+
+
+**the spawner should just spawn things and then push the spawned monsters or game objects to the priority queue to be drawn and handled in the physics and AI engine.
+============================================================
+
+***DONE***Create Options screen which sets the #defines 
+
+input type
+#define KEYBOARD 1
+#define CONTROLLER 0
+screen size
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
+Difficulty
+Easy Medium Hard
+
+***DONE***Create Load Game screen. Which should allow the player to load 7 different saved worlds.
+
+***DONE***Create a full screen or window menu option in the Options menu.
+
+***DONE***IN ALL SCREENS CHANGE MENUS TO BE ARRAYS AND DRAW THEM WITH ITERATIONS AS WELL AS SET THEM WITH ITERATIONS AND CHECK FOR THEM AND COLOR THEM WITH ITERATIONS. LoadGameScreen.cpp does it right look at that example.
+
+***DONE***In Character Sheet check to make sure the item type is correct when hovering over the circles or rectangles... and if the item isn't correct then draw a red circle or rectangle.
+do this for both rectangles and circles aka Equipment and Orbs.
+
+***DONE***Need to delete tree game objects when the gamescreen class is exited.
+
+***DONE***Change the sf::image Image in both the Main Menu screen and the Load Game string to an sf::Image Images[2]; and then load and change all other parts of code accordingly. Look at Options screen for the example.
+
+***DONE***Create an inventory screen
+
+***DONE***Connect in the options settings to the game.
+
+
+
+
+-FIX RANDOM NUMBER GENERATOR CODE TO CAST WITH DOUBLES. Also add the random function calls to the enemy game objects move speed random generator.
+
+-Do a code review going over each code file making sure that every file upholds consistent style of coding, is moduler meaning that it can stand alone with no other code includes before it and still run correctly. i.e. make sure that header files in each code file are included and that the dependancies are not coming from other files including the needed files for this file to run correctly, Make sure Naming conventions are met for Classes, Class variables, class funcitons, Guard code lables, Comments, Enums, and everything else.
+
+-Add an escape screen in game so when a player hits the escape key a menu in the center of the screen appears with the options: Resume game, Options, Save Map, Load Map, Quit. And when the options are chosen they do their appropriate task. i.e. quit game for "Quit" open options screen for Options( Options screen is another in game window... does not go to the Options screen at the beginning of game, but instead has another window with all the same options as the beginning screen options screen.)
+
+-Reorganize the gameScreen.cpp file into the task class structure from EE prototype project.
+
+-Add Screen Size option 640X480
+
+-Create the animation class. This class will take in sprite sheets for individual monsters, players, NPC and anthing else in the game that will be animated and then draws its state transitions. Also it takes and runs the character's idle state when it hasn't moved for a given amount of time or when it enters its stopped state.
+
+-Change the Inventory picture to have 32 X 32 squares for equipment. Also change Items const int spritewidth and spriteheight in file Item.cpp to 32 X 32.
+
+-Remove all un-needed comments.
+
+-Make Map a GameObject and move the tile drawing interation functin in GameScreen.cpp into the draw() function of Map.
+
+-Correctly load the selected world from the Load Game screen.
+
+-Create an Enum for all the different menu numbers in all the screens. i.e. right now main menu is associated to the return of 3... thus all menus should be uniquely identified correctly without magic numbers floating around.
+
+-Create shooting function for player. Use homing algorithm to find nearest enemy and hone in on them. Use radius and circle collision detection to find the closes enemy/mob.
+
+-Move radius elucidate function to player class. it is currently in GameScreen.cpp around lines 144-165 as of 12-21-2010
+
+-Create an input mapping screen option in under the Options menu. This screen will allow you to change the key configurations for all the different inputs in the game. 
+
+-Create a better large image for when the screen size is 1024 X 768. The current one looks too blurry because I streched it out with resize.
+
+-Comment Code. Make sure all comments are consitent in their read. function comments need to have the same fundamental information as all others, omitted data for a function is fine if it is not releavent to the function. but the fundamentals must be filed if they apply i.e. params need to be define returns etc. same for all things classes, enums, member variables apply the same concitent EYE to them as well.
+
+-Automated test code which is debugged flaged out needs to be implemented. i.e. when the DEBUG flag is true meaning somewhere this line exists: #define DEBUG 1 then the compiler will compile all the test case harnesses and run an output of all the passing and failing test cases. Also there needs to be white box testing of the branch coverage. TruCov which uses the Gcov linux program will be used to visually graph the games control flow diagram for testing to find and identify where they have not tested yet.
+
+-Go over code and make sure that Variables and naming conventions are all consitent. look at header files, cpp file, all file and make sure they have the same convention through out. also look the the #defines for each guard code in the header file to make sure those are consitent. look at function names and class names for consitency. member variables.. all parts to code need to be reviewed for consistency.
+
+-Create an ecoding structure for each int of the map, which breaks up the 32 bits of data into flags for different collision, terrain type, image association etc. i.e. bits 0-5 could be the enum of tile types: water, sand, dirt, mud, etc.
+
+-create a function which takes 10x10 tiles and creates one tile/image out of them then displays the one tile instead of all the tiles... have a seperate thread handle creating the new combined tile.
+do this for different sizes and as tiles build up the merge together even more and more... upto the width of the screen in image size.
+ALSO You dont have to save the images to file in order to use them. the capture() function for the renderwindow can be loaded into an image and used at run time. Thus at the beginning of the game when things are loading you can create the larger images.
+
+-Create an elucidate function which fades in tiles at a given transparency to solid form rate.
+
+-create a stats screen which displays speed and other attributes
+
+-Create new input model via commented out code at the bottom of main.cpp and have key mapping xml file layout.
+
+-Create Key mapping XML scheme
+
+-Create Key mapping loader
+
+-Create Key mapping saver
+
+-Create a list of all game inputs. i.e. ever key and or controller button functionality. This can mean both individual keys and multiple key press or alternate mode key functionality as well, which means depending on the state the game is currently in the keys may be bind to different configurations.
+
+-Wrap the images and sprites mappings into a class which has a function call sf::Image *getImage(std::string) or sf::Sprite *getSprite(std::string) which basically does the sprites.find("Angel")->second call in a function. and looks neater.
+Also create a class to hold the loaders and savers with this get function in it... this class will also hold the map<std::sting, sf::image> as well. for both sprite and image.
+
+-create/add player class to the gamestate singleton class so that the spawner doesn't need the player class passed to it, it can just reference the gamestate class and scope the player class.... i.e. gamestate::player. in side the function call which requires the player class... in fact I believe the player class only needs to be referenced by the individual monster/game object classes... I might just put in the game objects class a reference to the player class that gets set in the constructor of the virtual base class.
+
+-Reduce the Init functions of all GameObject classes to only take an image reference instead of both an image reference and a sprite of the player. This should be done after the player class is added to the GameClass.
+
+-Create an XML settings file scheme
+
+-Create an XML settings file loader
+
+-Create an XML settings file saver
+
+-Save settings to XML file when player clicks back on options screen
+
+-the spawner will need to take a list of terrain that a spanwed unit can spawn on and check to see that when the spawner creates a spawn it doesn't spawn it on an invalid terrain... i.e. spawning a a fish on land because the radius of the spanwer exceeds the water bounds may not be appropriate, thus it needs to take a list of terrains that are appropriate to spawn on into the function parameters.
+
+-finally move everything over to the EE Alpha organization structure.
+
+-The more you elucidate the larger your radius gets... you add a float fraction to your radius trying to get integer intervals of radius levels. cap the radius level at a value within the screen size so that you can always see what you are elucidating at the edges of the screen.
+Also you can only elucidate so fast.

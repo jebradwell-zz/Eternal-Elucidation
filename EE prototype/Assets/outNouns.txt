@@ -1,0 +1,21 @@
+Number of Items: 20
+able 2
+account 7
+achieve 1
+acoustics 5
+act 27
+action 190
+activity 2
+actor 40
+addition 61
+adjustment 45
+advertisement 11
+advice 66
+aftermath 123
+afternoon 7
+afterthought 4
+agreement 9
+air 5
+airplane 238
+airport 1951
+alarm 2387

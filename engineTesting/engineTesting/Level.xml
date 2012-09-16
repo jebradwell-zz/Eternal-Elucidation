@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<Level>
+  <Images>
+    <Image name="Images/InventorySheet.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/Equipment.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/red.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/blue.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/green.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/pink.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/orange.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/purple.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/black.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/yellow.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/grey.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/void.png" CreateMaskFromColor="false"
+          R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/Tree.png" CreateMaskFromColor="false"
+          R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/CharacterSheet.png" CreateMaskFromColor="false"
+          R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/ElucidatePalette.png" CreateMaskFromColor="false"
+          R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    
+    <Image name="Images/background.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/Yin.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/ball.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/paddle_left.png" CreateMaskFromColor="true"
+           R="0" G="255" B="0" A="255" SetSmooth="false"/>
+    <Image name="Images/paddle_right.png" CreateMaskFromColor="true"
+           R="255" G="0" B="0" A="255" SetSmooth="false"/>
+    <Image name="Images/Poison.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/Antidote.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/Angel.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/Demon.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/player.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+    <Image name="Images/Yang.png" CreateMaskFromColor="false"
+           R="NULL" G="NULL" B="NULL" A="NULL" SetSmooth="false"/>
+  </Images>
+  
+  <Sprites>
+    <Sprite name="ElucidatePalette" FlipX="false" FlipY="false"
+            SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+            SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="ElucidatePalette" SetRotation="0.0"
+            SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+            SetSubRectT="0" SetSubRectR="326" SetSubRectB="36"
+            SetX="237" SetY="10"/>
+    <Sprite name="Background" FlipX="false" FlipY="false"
+            SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+            SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="background" SetRotation="0.0"
+            SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+            SetSubRectT="0" SetSubRectR="800" SetSubRectB="600"
+            SetX="0" SetY="0"/>
+    <Sprite name="Angel" FlipX="false" FlipY="false"
+            SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+            SetColor="tag" Color="White" R="0" G="0" B="0" A="0" SetImage="Angel" SetRotation="0.0"
+            SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+            SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+            SetX="300" SetY="250"/>
+    <Sprite name="Angel2" FlipX="false" FlipY="false"
+            SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+            SetColor="tag" Color="White" R="0" G="0" B="0" A="0" SetImage="Antidote" SetRotation="0.0"
+            SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+            SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+            SetX="0" SetY="100"/>
+    <Sprite name="Antidote" FlipX="false" FlipY="false"
+            SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+            SetColor="values" Color="Red" R="255" G="0" B="0" A="0" SetImage="Antidote" SetRotation="0.0"
+            SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+            SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+            SetX="40" SetY="10"/>
+    <Sprite name="Yin" FlipX="false" FlipY="false"
+            SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+            SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="Yin" SetRotation="0.0"
+            SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+            SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+            SetX="80" SetY="10"/>
+    <Sprite name="Yang" FlipX="false" FlipY="false"
+            SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+            SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="Yang" SetRotation="0.0"
+            SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+            SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+            SetX="120" SetY="10"/>
+    <Sprite name="Poison" FlipX="false" FlipY="false"
+            SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+            SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="NULL" SetImage="Poison" SetRotation="0.0"
+            SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+            SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+            SetX="160" SetY="10"/>
+    <Sprite name="Demon" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="Demon" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+           SetX="200" SetY="10"/>
+    <Sprite name="Player" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="player" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+           SetX="300" SetY="300"/>
+    <Sprite name="LeftPaddle" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="paddle_left" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="20" SetSubRectB="70"
+           SetX="20" SetY="265"/>
+    <Sprite name="RightPaddle" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="paddle_right" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="20" SetSubRectB="70"
+           SetX="760" SetY="265"/>
+    <Sprite name="Ball" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="values" Color="Blue" R="0" G="0" B="255" A="0" SetImage="ball" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="25" SetSubRectB="25"
+           SetX="400" SetY="300"/>
+    
+    <Sprite name="Red" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="red" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="32" SetY="32"/>
+    <Sprite name="Blue" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="blue" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="32" SetY="256"/>
+    <Sprite name="Green" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="green" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="256" SetY="256"/>
+    <Sprite name="Grey" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="grey" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="256" SetY="32"/>
+    <Sprite name="Pink" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="pink" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="128" SetY="128"/>
+    <Sprite name="Orange" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="orange" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="32" SetY="128"/>
+    <Sprite name="Purple" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="purple" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="128" SetY="32"/>
+    <Sprite name="Yellow" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="yellow" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="64" SetY="32"/>
+    <Sprite name="Black" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="black" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="64" SetY="64"/>
+
+    <Sprite name="Void" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="void" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="0" SetY="0"/>
+    <Sprite name="Tree" FlipX="false" FlipY="false"
+           SetBlendMode="Alpha" SetCenterX="0" SetCenterY="0"
+           SetColor="false" Color="NULL" R="NULL" G="NULL" B="NULL" A="0" SetImage="Tree" SetRotation="0.0"
+           SetScaleX="1" SetScaleY="1" SetSubRectL="0"
+           SetSubRectT="0" SetSubRectR="32" SetSubRectB="32"
+           SetX="0" SetY="0"/>
+  </Sprites>
+  <Fonts>
+    <Font name="font.ttf"/>
+  </Fonts>
+  <Sounds>
+    <sound />
+    <sound />
+  </Sounds>
+</Level>
